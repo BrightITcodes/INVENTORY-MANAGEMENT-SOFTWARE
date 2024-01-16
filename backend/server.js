@@ -7,7 +7,7 @@ const morgan = require("morgan");
 const userRoute = require("./routes/userRoutes");
 const productRoute = require("./routes/productRoutes");
 const contactRoute = require("./routes/contactRoutes");
-const errorHandler = require("./middleWare/errorMiddleware");
+const errorHandler = require("./middleWare/errorMiddleWare");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 
@@ -21,7 +21,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://pinvent-app.vercel.app"],
+    origin: [
+      "http://localhost:3000",
+      "https://inventory-management-software-neon.vercel.app/",
+    ],
     credentials: true,
   })
 );
