@@ -23,7 +23,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://inventory-management-software-neon.vercel.app",
+      "https://inventory-management-software-ten.vercel.app",
     ],
     credentials: true,
   })
